@@ -1,0 +1,28 @@
+body { 
+	background-image: url('../images/wtlBG4.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover; 
+}
+
+#screen_area {
+	width:100%;
+	height:100%;
+  padding-top: 5%;
+  padding-left: 27.5%;
+}
+
+#vid_col{
+
+}
+
+#video{
+
+
+    width: 88.7%;
+    
+/*	width:100%;
+	height:100%;*/
+}
+
