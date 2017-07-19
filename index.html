@@ -9,27 +9,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">    
   </head>
-  <body>
-      <div class="container-fluid">
-            <div id="screen_area" class="row" >
-                  <!-- <div id="logodiv" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 " ></div>  -->
-    
-                  <!-- <div id="vid_col" class="col" > -->
-                        <iframe  id="video" src="https://www.youtube.com/embed/sE0lhyDMIhI?autoplay=1&loop=1&playlist=sE0lhyDMIhI" frameborder="0" allowfullscreen ></iframe>  
-                  <!-- </div> --> 
-               
+  <body id="bodyy">
+      <div class="container-fluid ">
+            <div id="screen_area" class="row mx-auto" >
+            <div id="frame">
+                  
+                
+                  <div id="vid_col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                    
+                          <iframe  id="video" src="https://www.youtube.com/embed/sE0lhyDMIhI?autoplay=1&loop=1&playlist=sE0lhyDMIhI" frameborder="0" allowfullscreen ></iframe>
+                    </div>        
+                  
+          </div>                         
             </div> 
       </div>
-
     <script>
         window.onresize = displayWindowSize;
         window.onload = displayWindowSize;
         function displayWindowSize() {
+          // var width = document.documentElement.clientWidth;
+          // var height = document.documentElement.clientHeight;
           var width = $(window).width();
           var height = $(window).height();
+
+          var text_marquee = document.getElementById("text_marquee");
           var video=document.getElementById("video");
-          var vid_aspect=0.61;
+          var screen=document.getElementById("frame");
+          var vid_aspect=0.52,frame_aspect=0.54;
           video.style.height=(video.offsetWidth*vid_aspect)+'px';
+          screen.style.height=(screen.offsetWidth*frame_aspect)+'px';
+
         };
     </script>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
